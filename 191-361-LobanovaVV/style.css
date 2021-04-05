@@ -37,7 +37,16 @@ footer {
 }
 aside {
     grid-area: aside;
-    background-color: #ccd3cd;
+    background: rgba(0, 0, 0, 0.5) url('img/ecosystem-fish-pond-la.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFB6C1;
+}
+aside span {
+    margin-left: 30px;
+    padding: 2px;
+    background-color: #3CB371;
 }
 .name_game {
     color: #006400;
@@ -52,7 +61,12 @@ aside {
     text-align: center;
     font-size: 20px;
     padding: 5px;
+    color: #FFB6C1;
+    background-color: #3CB371;
 }
+/*.center {
+    margin: 0 auto;
+}*/
 img {
     text-align: center;
 }
