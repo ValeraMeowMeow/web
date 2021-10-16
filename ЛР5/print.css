@@ -1,0 +1,39 @@
+@page :first { 
+    margin: 1cm; 
+    /* Отступы для первой страницы */ 
+}
+@page :left { 
+    margin: 1cm 3cm 1cm 1.5cm; 
+    /* Отступы для всех левых страниц */
+}
+a[href]:after {
+    content: " (" attr(href) ")";
+}
+a[href^="http"]:not([href*="github.com"]):after {
+    content: " (" attr(href) ")";
+}
+.hero {
+    orphans: 2;
+}
+footer p {
+    display: none;
+}
+h3 {
+    display: none;
+}
+.search, 
+.none {
+    display: none;
+}
+/* a {
+    display: none;
+} */
+button {
+    display: none;
+}
+.docs-content, .hero { page-break-inside: avoid; }
+
+h1 { 
+    page-break-before: always;
+    color: black;
+}

@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.5em;
+}
+main {
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+}
+
+.theme {
+    transition: margin-right 2s;
+    animation: theme 10s ease-in-out;
+    text-align: center;
+    width: 100%;
+    color: azure;
+    font-family: 'Century Gothic';
+    font-size: 14;
+    position: absolute;
+    top: -50px;
+}
+.theme:hover {
+    animation-play-state: paused;
+}
+@keyframes theme {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 500px;
+    }
+}
+
+.rick {
+    animation: rick 10s infinite linear;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("rick.png");
+}
+@keyframes rick {
+    0% {
+        transform: rotate(0deg);
+        /* left: 200px; */
+    }
+    100% {
+        transform: rotate(-360deg);
+        /* left: 1000px; */
+    }
+}
+
+.skelet {
+    animation: skelet 5s infinite linear;
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+    left: -300px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("skelet.png");
+    transform: rotate(90deg);
+    z-index: 1;
+}
+@keyframes skelet {
+    0% {
+        left: -300px;
+    }
+    100% {
+        left: calc(100% - 200px);
+    }
+}
+
+.archer {
+    animation: archer 7s infinite linear;
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    bottom: 100%;
+    right: 200px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("archer.png");
+    transform: rotate(180deg);
+    z-index: 1;
+}
+@keyframes archer {
+    0% {
+        bottom: 100%;
+        width: 100px;
+        height: 250px;
+    }
+    50% {
+        bottom: calc(100% - 200px);
+        width: 200px;
+        height: 500px;
+    }
+    100% {
+        bottom: 100%;
+        width: 100px;
+        height: 250px;
+    }
+}
+
+.skeletor {
+    animation: skeletor 8s infinite linear;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 500px;
+    right: 1000px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("skeletor.png");
+    z-index: 1;
+}
+@keyframes skeletor {
+    0% {
+        top: 500px;
+        right: 1000px;
+    }
+    25% {
+        top: 500px;
+        right: 1100px;
+    }
+    50% {
+        top: 600px;
+        right: 1100px;
+    }
+    75% {
+        top: 600px;
+        right: 1000px;
+    }
+    100% {
+        top: 500px;
+        right: 1000px;
+    }
+}
+
+.skelet-makki {
+    animation: skelet-makki 4290ms 1 ease-out;
+    animation-fill-mode: forwards;
+    top: 300px;
+    left: -300px;
+    transform: scale(-1, 1);
+}
+
+@keyframes skelet-makki {
+    0% {
+        left: -300px;
+    }
+    90% {
+        left: 800px;
+        width: 200px;
+        height: 500px;
+    }
+    95%{
+        left: 800px;
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        opacity: 0;
+    }
+}
+
+.makki {
+    background-image: url("makki.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 800px;
+    top: 500px;
+    width: 450px;
+    height: 1000px;
+    animation: crash 1s 1 linear;
+    animation-delay: 5s;
+    opacity: 0;
+}
+@keyframes makki {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.delay::after {
+    animation-delay: 4s;
+}

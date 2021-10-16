@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic';
+}
+body {
+    background-color: #6A5ACD;
+    color: #FFFFFF;
+    justify-content: center;
+}
+.header {
+    background-color: #4B0082;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.header a {
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #9370DB;
+}
+a {
+    text-decoration: none;
+}
+div .item1 {
+    background-color:#df5ce4;
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    font-size: 5vw;
+    padding: .5em;
+    margin: 10px;
+}
+.block100g {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div .item2 {
+    background-color:#d35fa6;
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    font-size: 5vw;
+    padding: .5em;
+    margin: 10px;
+}
+.block100v {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 50px;
+}

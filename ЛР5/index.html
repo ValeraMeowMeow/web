@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Есть пробитие!</title>
+        <link rel="shortcut icon" href="logo.png" type="image/jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" media="print" href="print.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <header>
+        <div>
+            <!-- <div>Лабораторная работа №3</div>
+            <div><a href="https://github.com/ValeraMeowMeow/web">GitHub</a></div>
+            <div>Лобанова В.В.</div> -->
+        </div>
+        </header>
+    <main>
+        <div class="hero hero-lg bg-dark plpr">
+            <div class="hero-body">
+                <h1>Черепашки</h1>
+                <p>один из четырёх современных отрядов пресмыкающихся</p>
+            </div>
+        </div>
+        
+        <div class="none hero hero-sm bg-grayy plpr">
+            <div class="hero-body">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Черепашки</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero hero-sm bg-dark plpr">
+            <div class="hero-body">
+                <h1>Testudines</h1>
+                <p>Латинское testudo происходит от testa «кирпич, черепица, глиняный сосуд»</p>
+                <br>
+                <!-- <button class="btn float-left">Передать привет черепашке с:</button> -->
+                <div id="example-2" class="float-left">
+                    <button v-on:click="greet" class="none btn">Передать привет черепашке с:</button>
+                    <br>
+                    <a href="javascript:(print());" class="none print">Распечатать страницу</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero hero-lg bg-gray plpr">
+            <div class="hero-body">
+                <div class="text-center">Одним из самых интересных отрядов пресмыкающихся по праву считается черепаха. Ученые, изучавшие древние останки с целью узнать, сколько лет живет она на планете, установили, что их существование на Земле длится более 220 миллионов лет. Это редкие животные, способные жить на суше и в воде. Черепаха – это рептилия, которая насчитывает 328 видов, объединенных в 14 семейств.</div>
+                <br>
+                <div class="text-center">Если рассмотреть славянское и латинское происхождение названия пресмыкающегося, то легко увидеть общее. Оба языка демонстрируют в слове отклик на внешний вид: в переводе с латинского «черепица», «сосуд из глины», «кирпич»; со славянского – «черепок».</div>
+                <br>
+                <div class="text-center">Действительно, многие черепахи напоминают камень, за который их приняли люди, давшие это название. Несмотря на такую этимологию названия, в нем прослеживается и указание на уникальную форму и расцветку твердых панцирей.</div>
+            </div>
+        </div>
+        <br>
+        <div class="docs-content columns plpr">
+            <div class="column col-6 col-xs-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title h5">Виды черепах</div>
+                        <div class="card-subtitle text-gray">Продолжительное пребывание представителей этого отряда на планете позволили разделиться на 328 видов, отличающихся внешними признаками, размерами, средой обитания, питанием и образом жизни.</div>
+                    </div>
+                    <div class="card-body">Классификация предполагает разделение рептилий в зависимости от того, как они прячут голову в панцирь, на скрытошейных и бокошейных. Первая группа вжимает голову в панцирь за счет сокращения шейных мышц. Вторая – складывают в бок, под одну из передних лап.</div>
+                    <div class="card-image">
+                        <img class="img-responsive" src="2.jpg" alt="2che">
+                    </div>
+                </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title h5">Чем питается черепаха и как поживает?</div>
+                        <div class="card-subtitle text-gray">Рацион домашних черепах зависит напрямую от типа их питания, они бывают хищными, травоядными и всеядными. Каждый из видов имеет свои особенности при кормлении, а предпочтения в еде у некоторых земноводных могут с возрастом изменяться.</div>
+                    </div>
+                    <div class="card-body">Продолжительность жизни: В среднем в дикой природе черепахи живут около 20-30 лет. Но это зависит от вида рептилии. Есть долгожители, которые могут достичь 200 летнего возраста. Как правило, в неволе черепахи живут дольше, но и это так же зависит от вида и условий содержания.</div>
+                    <div class="card-image">
+                        <img class="img-responsive" src="1.jpg" alt="1che">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="column col-12 search">
+            <div class="empty">
+                <div class="empty-icon"><i class="icon icon-3x icon-people"></i></div>
+                  <p class="empty-title h5">Хочешь узнать о черепашках что-то конкретное?</p>
+                  <p class="empty-subtitle">Начни искать</p>
+                  <div class="empty-action input-group input-inline">
+                    <input class="form-input" type="text" placeholder="">
+                    <button class="btn btn-primary input-group-btn">Поиск</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="hero hero-sm bg-dark footer">
+            <div class="hero-body">
+                <h3>Лабораторная работа №5</h3>
+                <p>Лобанова В.В.</p>
+                <a href="https://github.com/ValeraMeowMeow/web">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var example2 = new Vue({
+        el: '#example-2',
+        data: {
+            name: 'Черепашки'
+        },
+        // определяйте методы в объекте `methods`
+        methods: {
+            greet: function (event) {
+            // `this` внутри методов указывает на экземпляр Vue
+            alert('Привет, ' + this.name + '!')
+            // `event` — нативное событие DOM
+            if (event) {
+                alert(event.target.tagName)
+            }
+            }
+        }
+        })
+        // вызывать методы можно и императивно
+        example2.greet()
+    </script>
+    </body>
+</html>

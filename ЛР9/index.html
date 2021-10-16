@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Есть пробитие!</title>
+    <link rel="shortcut icon" href="logo.png" type="image/jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+
+<body id="body">
+    <header>
+        <div class="header">
+            <div>Лабораторная работа №9</div>
+            <div><a href="https://github.com/ValeraMeowMeow/web">GitHub</a></div>
+            <div>Лобанова В.В.</div>
+        </div>
+    </header>
+    <main id="header">
+        <div class="flex">
+            <div class="flex">
+                <p>Фон</p>
+                <ul class="flex">
+                    <li><button aria-label="Розовый" type="button" name="color1" onclick="changeColor('#c77eda')"
+                            class="color color1"></button></li>
+                    <li><button aria-label="Голубой" type="button" name="color2" onclick="changeColor('#70addf')"
+                            class="color color2"></button></li>
+                    <li><button aria-label="Зелёный" type="button" name="color3" onclick="changeColor('#51dbb9')"
+                            class="color color3"></button></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <p>Стиль шрифта</p>
+                <ul class="flex">
+                    <li><button aria-label="Стандартный шрифт" type="button" name="tnr" class="font"
+                            onclick="changeFontFamily('header','Century Gothic')">Century Gothic</button>
+                    </li>
+                    <li><button aria-label="Arial шрифт" type="button" name="arial" class="font"
+                            onclick="changeFontFamily('header','Times New Roman')">Times New Roman</button>
+                    </li>
+                    <li><button aria-label="Serif шрифт" type="button" name="serif" class="fonr"
+                            onclick="changeFontFamily('header','Arial')">Arial</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <p>Размер шрифта</p>
+                <ul class="flex">
+                    <li><button aria-label="Маленький" 
+                            onclick="changeFontSize('header','1em')">Маленький</button></li>
+                    <li><button aria-label="Средний" type="button" name="medium"
+                            onclick="changeFontSize('header','1.5em')">Средний</button></li>
+                    <li><button aria-label="Большой" type="button" name="large"
+                            onclick="changeFontSize('header','2em')">Большой</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero-body mr">
+            <div class="text-center">Одним из самых интересных отрядов пресмыкающихся по праву считается черепаха. Ученые, изучавшие древние останки с целью узнать, сколько лет живет она на планете, установили, что их существование на Земле длится более 220 миллионов лет. Это редкие животные, способные жить на суше и в воде. Черепаха – это рептилия, которая насчитывает 328 видов, объединенных в 14 семейств.</div>
+            <br>
+            <div class="text-center">Если рассмотреть славянское и латинское происхождение названия пресмыкающегося, то легко увидеть общее. Оба языка демонстрируют в слове отклик на внешний вид: в переводе с латинского «черепица», «сосуд из глины», «кирпич»; со славянского – «черепок».</div>
+            <br>
+            <div class="text-center">Действительно, многие черепахи напоминают камень, за который их приняли люди, давшие это название. Несмотря на такую этимологию названия, в нем прослеживается и указание на уникальную форму и расцветку твердых панцирей.</div>
+        </div>
+
+        <script>
+            function changeFontSize(header, size) {
+                var obj = document.getElementById(header);
+                obj.style.fontSize = size;
+            }
+
+            function changeFontFamily(header, family) {
+                var obj = document.getElementById(header);
+                obj.style.fontFamily = family;
+            }
+
+            function changeColor(color) {
+                var obj = document.getElementById('body');
+                var sp = document.querySelector('#span');
+                obj.style.backgroundColor = color;
+                sp.className = "";
+                sp.style.fontSize = '24px';
+                sp.style.fontWeight = "bold";
+                if (color == '#c77eda') {
+                    obj.style.color = '#000';
+                }
+                if (color == '#70addf') {
+                    obj.style.color = '#FFF';
+                }
+                if (color == '#51dbb9') {
+                    obj.style.color = '#000';
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>
