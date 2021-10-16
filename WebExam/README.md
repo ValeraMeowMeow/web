@@ -1,5 +1,3 @@
-##### https://todo-list.serygin.ru/
-
 ## Project setup
 ```
 npm install
